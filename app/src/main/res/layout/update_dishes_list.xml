@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="7dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@color/LemonChiffon"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/update_dishcode_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="Code"
+                        android:textColor="@color/colorDarkGreen"
+
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/update_dishcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="01"
+                        android:background="@drawable/txt_view_border"
+                        android:textColor="@color/colorLightRedGrand"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/update_dishname_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Recipe"
+                    android:textColor="@color/colorGrandBlue"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/update_dishname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="Idly"
+                    android:background="@drawable/txt_view_border"
+                    android:textColor="@color/colorLightRedGrand"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/update_dishid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/update_add_dishbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/new_btn"
+                        android:foregroundGravity="center"
+                        android:text="Add"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/update_invisible_dish_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/update_btn_minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/mi"
+                        android:drawableTint="@color/Red" />
+
+                    <EditText
+                        android:id="@+id/update_qty_range"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:text="10"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorLightRedGrand"
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/update_btn_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/pl"
+                        android:drawableTint="@color/Red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:background="@color/LemonChiffon"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/update_dishprice_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="center"
+                        android:text="Price"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/colorGrandBlue"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/update_dishprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:background="@drawable/txt_view_border"
+                        android:text="50"
+                        android:textColor="@color/colorLightRedGrand"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+</RelativeLayout>

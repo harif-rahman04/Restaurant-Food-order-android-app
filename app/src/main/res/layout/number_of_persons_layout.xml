@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20.0dip"
+    android:layout_marginTop="20.0dip"
+    android:background="@color/Cornsilk"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:orientation="horizontal"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="14.0dip">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:paddingLeft="10.0dip"
+                android:text="No of person"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/no_of_persons"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/square_edittext"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:maxLength="3"
+                android:maxLines="9"
+                android:padding="5.0dip"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18.0dip"
+            android:orientation="horizontal"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="14.0dip">
+
+            <Button
+                android:id="@+id/btn_zero"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_one"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="1"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btn_two"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="2"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btn_three"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="3"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btn_four"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="4"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="14.0dip">
+
+            <Button
+                android:id="@+id/btn_five"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="5"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btn_six"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="6"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btn_seven"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="7"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btn_eight"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="8"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btn_nine"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="9"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:orientation="horizontal"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="14.0dip">
+
+            <Button
+                android:id="@+id/btn_persons_ok"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="OK"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btn_persons_erase"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="Backspace"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btn_persons_delete"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="0.5"
+                android:background="@color/Brown"
+                android:text="Clear"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

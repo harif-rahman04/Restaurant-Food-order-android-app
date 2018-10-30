@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.opus.restaurant">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mainicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SettingsActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity android:name=".TablesViewActivity" />
+        <activity android:name=".MainCategoryActivity" />
+        <activity android:name=".MainItemActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".TableViewActivity" />
+        <activity android:name=".ViewRunningOrderActivity" />
+        <activity android:name=".TablesOnlyActivity" />
+        <activity android:name=".KotlistActivity" />
+        <activity android:name=".KotSummaryActivity" />
+        <activity android:name=".EditKotActivity" />
+        <activity android:name=".EditAddCategoryActivity" />
+        <activity android:name=".EditAddItemsActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".EditAllKotActivity" />
+        <activity android:name=".EditBillViewActivity"></activity>
+    </application>
+
+</manifest>

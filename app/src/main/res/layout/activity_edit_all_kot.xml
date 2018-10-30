@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditAllKotActivity">
+
+    <LinearLayout
+        android:id="@+id/overall_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/LemonChiffon"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:background="@drawable/txt_view_border"
+                    android:id="@+id/edit_kot_no_edit_all_kot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kot No:"
+                    android:layout_weight="1.4"
+                    android:textColor="@color/colorLightRedGrand"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/date_txtvw_edit_all_kot"
+                    android:background="@drawable/txt_view_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date :"
+                    android:layout_weight="0.6"
+                    android:gravity="right"
+                    android:textColor="@color/colorLightRedGrand"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/waiter_code_txt_view_edit_all_kot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Waiter code :"
+                    android:background="@drawable/txt_view_border"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorLightRedGrand"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/txt-room_type_edit_all_kot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room-type:"
+                    android:background="@drawable/txt_view_border"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/colorLightRedGrand"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/table_list_edit_all_kot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Table"
+                android:layout_weight="1"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/txt_view_border"
+                android:textColor="@color/colorLightRedGrand"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:visibility="gone">
+            <Button
+                android:id="@+id/edit_kot_newitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Items"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/overall_edit_layout"
+        android:layout_above="@+id/edit_kot_proceedlayout"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/edit_kot_listview"
+                android:dividerHeight="1dp"
+                android:divider="@color/cardview_dark_background">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_kot_proceedlayout"
+
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_kot_calc_layout"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorLightRedGrand"
+                    android:textSize="17dp"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="Total Amount"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorLightRedGrand"
+                    android:textSize="20dp"
+                    android:gravity="right"
+                    android:paddingRight="30dp"
+                    android:id="@+id/edit_kot_total"
+                    android:text="0.00"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/edit_kot_proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_kot_calc_layout"
+            android:background="@color/Crimson"
+            android:clickable="true"
+            android:text="Proceed"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

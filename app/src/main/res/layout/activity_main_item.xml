@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainItemActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview_dish"
+        android:layout_above="@+id/proceed_layout"
+        android:descendantFocusability="afterDescendants"
+        android:windowSoftInputMode="adjustPan"
+        android:divider="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="0dp">
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/proceed_layout"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/square_edittext"
+            android:id="@+id/suggestion_et"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/proceed_checkout_btn"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:text="Proceed"
+            android:textAllCaps="false"
+            android:background="@color/colorLightBlack"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

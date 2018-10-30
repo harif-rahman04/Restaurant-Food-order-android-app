@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical"
+    tools:context=".ViewRunningOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:background="@color/LemonChiffon"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="5dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/edit_kot_no_running_order_act"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:text="Kot No:"
+                android:background="@drawable/txt_view_border"
+                android:textColor="@color/Red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/date_txtvw_running_order_act"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="@drawable/txt_view_border"
+                android:gravity="right"
+                android:text="Date :"
+                android:textColor="@color/Red"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/waiter_code_txt_view_running_order_act"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/txt_view_border"
+                android:gravity="left"
+                android:text="Waiter code :"
+                android:textColor="@color/Red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt-room_type_running_order_act"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:background="@drawable/txt_view_border"
+                android:text="Room-type:"
+                android:textColor="@color/Red"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+        <TextView
+            android:id="@+id/table_list_view_running_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingTop="5dp"
+            android:background="@drawable/txt_view_border"
+            android:text="Table"
+            android:textColor="@color/Red"
+            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/order_type_view_running_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingTop="5dp"
+                android:background="@drawable/txt_view_border"
+                android:text="Table"
+                android:textColor="@color/Red"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.89"
+        android:background="@color/White"
+        android:divider="@color/colorGrandBlue"
+        android:dividerHeight="1dp" />
+    <Button
+        android:id="@+id/btn_tot_view_running_act"
+        android:layout_weight="0.01"
+        android:textColor="@color/White"
+        android:background="@color/Brown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>

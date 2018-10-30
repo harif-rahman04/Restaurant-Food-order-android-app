@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditBillViewActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/overall_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LemonChiffon"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/edit_kot_no_edit_bill_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kot No:"
+                android:background="@drawable/txt_view_border"
+                android:layout_weight="0.6"
+                android:textColor="@color/Red"
+                android:textSize="20sp" />
+            <TextView
+                android:background="@drawable/txt_view_border"
+                android:id="@+id/date_txtvw_edit_bill_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :"
+                android:layout_weight="1.4"
+                android:gravity="right"
+                android:textColor="@color/Red"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/waiter_code_txt_view_edit_bill_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waiter code :"
+                android:background="@drawable/txt_view_border"
+                android:layout_weight="1"
+                android:textColor="@color/Red"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txt-room_type_edit_bill_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room-type:"
+                android:background="@drawable/txt_view_border"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/Red"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_table_list_edit_bill_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Table"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:background="@drawable/txt_view_border"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/Red"
+            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txt_no_of_person_edit_bill_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No.of.person"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/txt_view_border"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/Red"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/overall_edit_layout"
+        android:layout_above="@+id/edit_kot_proceedlayout"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/edit_kot_listview"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:dividerHeight="1dp"
+                android:divider="@color/cardview_dark_background">
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_kot_proceedlayout"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_kot_proceed"
+            android:background="@color/colorLightBlack"
+            android:textColor="@color/colorWhite"
+            android:clickable="true"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:text="Proceed"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_button"
+        android:layout_width="66dp"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/DeepPink"
+       app:tint="@color/White"
+        android:src="@android:drawable/ic_input_add" />
+</android.support.design.widget.CoordinatorLayout>

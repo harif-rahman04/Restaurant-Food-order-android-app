@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:scaleType="fitStart"
+                android:src="@drawable/splash_bg7" />
+            <RelativeLayout
+                android:id="@+id/login_credentials_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="260dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp">
+                <RelativeLayout
+                    android:id="@+id/login_username_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp">
+                    <com.opus.restaurant.Utilities.QuickSandRegularEditText
+                        android:id="@+id/login_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/waiter_logo3"
+                        android:background="@drawable/square_edittext"
+                        android:hint="Username"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:maxLines="1"
+                        android:textColor="@color/colorLightBlack"
+                        android:textColorHint="@color/colorLightBlack" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/login_password_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_username_layout"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp">
+                    <com.opus.restaurant.Utilities.QuickSandRegularEditText
+                        android:id="@+id/login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/square_edittext"
+                        android:fontFamily="sans-serif"
+                        android:drawableLeft="@drawable/ic_action_passs"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:maxLines="1"
+                        android:textColor="@color/colorLightBlack"
+                        android:textColorHint="@color/colorLightBlack" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/login_buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_credentials_layout"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="21dp"
+                android:paddingRight="21dp">
+
+                <Button
+                    android:id="@+id/login_signin_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Brown"
+                    android:padding="10dp"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/login_forgotpassword_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_buttons_layout"
+                android:layout_marginTop="12dp"
+                android:visibility="gone">
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/login_signupbtn_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_forgotpassword_layout"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="21dp"
+                android:paddingRight="21dp">
+
+                <Button
+                    android:id="@+id/login_settings_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Chocolate"
+                    android:padding="10dp"
+                    android:text="Settings"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_above="@+id/login_credentials_layout"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="-260dp"
+                android:text="Login" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
